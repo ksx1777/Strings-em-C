@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /*
 DEFINA O TERMINADOR PARA '\0' CASO SEU SISTEMA SEJA WINDOW
 OU '0x0' CASO SEJA LINUX
