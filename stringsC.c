@@ -51,10 +51,11 @@ int addstr(char strTo[], char strFrom[]){
 }
 
 void *memSet (void *dest, int val, int len){
-  unsigned char *ptr = dest;
-  while (len-- > 0)
-    *ptr++ = val;
-  return dest;
+   unsigned char *ptr = dest;
+   for(; len > 0; len --){
+     *ptr++ = val;
+   }
+   return dest;
 }
 
 int toUpperCase(char string[], int from, int to){
