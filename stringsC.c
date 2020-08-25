@@ -50,15 +50,11 @@ int addstr(char strTo[], char strFrom[]){
     return 0;
 }
 
-int strClear(char string[], int from, int to){
-    int len = slen(string);
-    if(to > len){
-        to = len;
-    }
-    for(int i = from; i <= to; i++){
-        string[i] = '\0';
-    }
-    return 0;
+void *memSet (void *dest, int val, int len){
+  unsigned char *ptr = dest;
+  while (len-- > 0)
+    *ptr++ = val;
+  return dest;
 }
 
 int toUpperCase(char string[], int from, int to){
