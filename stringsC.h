@@ -1,8 +1,3 @@
-/*
-DEFINA O TERMINADOR PARA '\0' CASO SEU SISTEMA SEJA WINDOW
-OU '0x0' CASO SEJA LINUX
-*/
-
 #define TERMINADOR '\0'
 
 /* obter tamanho de string */
