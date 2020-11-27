@@ -1,2 +1,1 @@
-# Strings-em-C
-Algumas funções básicas para manipulação de strings. As funções funcionam em C e C++
+Algumas funções para manipulação de strings.
