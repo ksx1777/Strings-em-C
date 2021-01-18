@@ -14,10 +14,6 @@ int strCmp(char firstStr[], char secStr[]){
     /* RETORNA "1" CASO AS STRINGS SEJAM DIFERENTES, E "0" SE FOREM IGUAIS*/
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
 short int
 strcopy(char *from, char *to, int from_, int to_){
     int to_size = sizeof(to);
