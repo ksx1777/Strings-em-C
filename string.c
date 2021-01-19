@@ -1,6 +1,6 @@
 #include "stringsC.h"
 
-int strCmp(char firstStr[], char secStr[]){
+int strcmp(char firstStr[], char secStr[]){
     int len = slen(firstStr);
     if(len != slen(secStr)){
         return 1;
@@ -16,11 +16,7 @@ int strCmp(char firstStr[], char secStr[]){
 
 short int
 strcopy(char *from, char *to, int from_, int to_){
-    int to_size = sizeof(to);
-    int from_size = strlen(from);
-    /**/
-    if (from_size > to_size) return -1;
-    for(int i = 0; i < to_size; i++){
+    for(int i = 0; i < sizeof(to); i++){
         if(from_ > to_) break;
         to[i] = from[from_];
         from_++;
